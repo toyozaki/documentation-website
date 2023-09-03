@@ -38,7 +38,7 @@ The query accepts the following parameters. All parameters are optional.
 
 Parameter | Data type | Description
 :--- | :--- | :---
-`<field>` | String | The field in which to search. A document is returned in the results only if its field value exactly matches at least one term, with the correct spacing and capitalization.
+`<field>` | Array of strings | The array of terms to search for in the field specified in `<field>`. A document is returned in the results only if its field value exactly matches at least one term, with the correct spacing and capitalization.
 `boost` | Floating-point | Boosts the query by the given multiplier. Useful for searches that contain more than one query. Values in the [0, 1) range decrease relevance, and values greater than 1 increase relevance. Default is `1`. 
 
 ## Terms lookup
